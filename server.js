@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000;
 app.use(cors());
 app.use(express.json());
 
-const data = JSON.parse(fs.readFileSync('agri_data.json', 'utf8'));
+const data = JSON.parse(fs.readFileSync('agri_data_FULL.json', 'utf8'));
 
 app.get('/', (req, res) => {
     res.send('AgriDose Backend is Running');
